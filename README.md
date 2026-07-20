@@ -1,6 +1,6 @@
 # Titanic Exploratory Data Analysis using Microsoft Azure Machine Learning
 
-![Average Fare by Passenger Class](images/fare_by_passenger_class.png)
+![Average Fare by Passenger Class](images/fare_by_passenger_class.PNG)
 
 ## Project Overview
 
