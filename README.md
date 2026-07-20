@@ -1,5 +1,7 @@
 # Titanic Exploratory Data Analysis using Microsoft Azure Machine Learning
 
+![Average Fare by Passenger Class](images/fare_by_passenger_class.png)
+
 ## Project Overview
 
 This project presents a complete **Exploratory Data Analysis (EDA)** of the Titanic dataset using **Python** in **Microsoft Azure Machine Learning Notebooks**.
