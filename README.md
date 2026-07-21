@@ -1,92 +1,134 @@
-# Titanic Exploratory Data Analysis using Microsoft Azure Machine Learning
+# Titanic Regression Project using Microsoft Azure Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-
 ![Azure Machine Learning](https://img.shields.io/badge/Azure-Machine%20Learning-0078D4)
-
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626)
-
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458)
-
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
 
-![Average Fare by Passenger Class](images/fare_by_passenger_class.PNG)
+---
 
 ## Project Overview
 
-This project presents a complete **Exploratory Data Analysis (EDA)** of the Titanic dataset using **Python** in **Microsoft Azure Machine Learning Notebooks**.
+This repository presents an end-to-end machine learning workflow using the Titanic dataset in **Microsoft Azure Machine Learning**.
 
-The objective of this project is to explore the dataset, assess its quality, understand the relationships between variables, and identify key insights before developing machine learning models.
+The project combines **Exploratory Data Analysis (EDA)** and **Automated Machine Learning (AutoML)** to demonstrate the complete process of understanding a dataset, preparing it for modeling, automatically comparing multiple machine learning algorithms, and evaluating the best-performing model.
 
 ---
 
 ## Objectives
 
-- Explore the structure of the dataset
-- Assess data quality
-- Analyze missing values
-- Generate descriptive statistics
-- Perform univariate analysis
-- Perform bivariate analysis
-- Analyze correlations
-- Summarize key findings
+- Explore the Titanic dataset
+- Assess data quality and missing values
+- Perform descriptive and visual data analysis
+- Configure and run an Azure AutoML experiment
+- Compare multiple machine learning models
+- Evaluate the best-performing regression model
+- Document the complete workflow
 
 ---
 
 ## Technologies Used
 
 - Microsoft Azure Machine Learning
+- Azure AutoML
 - Python
 - Pandas
 - Matplotlib
+- Scikit-learn
 - Jupyter Notebook
 
 ---
 
 ## Dataset
 
-The project uses the **Titanic dataset**, which contains passenger information such as:
+The project uses the **Titanic dataset**, which contains passenger information including:
 
 - Passenger Class
 - Age
 - Sex
 - Fare
 - Embarkation Port
+- Family Relationships
 - Survival Status
 
 ---
 
-## Project Structure
+## Repository Structure
 
-```
-Titanic-EDA-AzureML/
+```text
+Titanic-AzureML-Regression/
 │
-├── Titanic_EDA_Azure_Machine_Learning.ipynb
+├── README.md
+├── LICENSE
 ├── train.csv
-└── README.md
+│
+├── 01_Titanic_EDA.ipynb
+├── 02_Titanic_AutoML_Report.ipynb
+│
+└── images/
 ```
 
 ---
 
-## Key Findings
+## Project Components
 
-- The Fare variable is highly right-skewed and contains several outliers.
-- Passenger Class is the strongest predictor of ticket fare.
-- Age contains approximately 20% missing values.
-- Cabin contains more than 77% missing values.
-- No duplicate records were found.
+### 1. Exploratory Data Analysis (EDA)
+
+The first notebook focuses on understanding the dataset through:
+
+- Dataset exploration
+- Missing value analysis
+- Descriptive statistics
+- Univariate and bivariate analysis
+- Data visualization
+- Key insights before modeling
 
 ---
 
-## Future Work
+### 2. Azure Machine Learning AutoML
 
-The next stage of this project will include:
+The second notebook documents the complete Azure AutoML workflow, including:
 
-- Data preprocessing
-- Feature engineering
-- Regression model development
-- Model evaluation
-- Performance comparison
+- AutoML experiment configuration
+- Dataset preparation
+- Automated model comparison
+- Best model selection
+- Performance evaluation
+- Discussion of results
+- Technical conclusions
+
+---
+
+## Best AutoML Model
+
+| Metric | Value |
+|---------|------:|
+| **Algorithm** | StandardScalerWrapper + ExtremeRandomTrees |
+| **Normalized RMSE** | **0.06663** |
+| **R² Score** | **0.4835** |
+| **Spearman Correlation** | **0.8336** |
+| **Mean Absolute Error (MAE)** | **14.37** |
+
+---
+
+## Sample Visualization
+
+![Average Fare by Passenger Class](images/fare_by_passenger_class.PNG)
+
+---
+
+## Key Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Microsoft Azure Machine Learning
+- Automated Machine Learning (AutoML)
+- Data preprocessing and exploration
+- Model comparison and selection
+- Performance evaluation
+- Technical reporting
+- Cloud-based machine learning workflows
 
 ---
 
@@ -96,4 +138,12 @@ The next stage of this project will include:
 
 PhD in Mathematics (Probability, Statistics and Applications)
 
-Learning Machine Learning and Artificial Intelligence through practical cloud-based projects.
+Associate Professor of Mathematics and Statistics
+
+Learning Artificial Intelligence, Machine Learning, and Data Analytics through practical cloud-based projects.
+
+---
+
+## License
+
+This project is released under the **MIT License**.
